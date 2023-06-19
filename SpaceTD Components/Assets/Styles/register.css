@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+
+.container {
+    background-color: rgba(103, 102, 102, 0.8); /* Dark grey background */
+    padding: 70px 70px 70px;
+    border-radius: 8px;
+    margin: 0 auto;
+  }
+  
+  /* Additional styles for the form */
+  .form-title {
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+  
+  .row .col {
+    flex: 0 0 50%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .user-input-box {
+    margin-bottom: 15px;
+  }
+  
+  .user-input-box label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .user-input-box input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .gender-details-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .gender-title {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .gender-category label {
+    margin-right: 10px;
+  }
+  
+  .form-submit-btn {
+    text-align: center;
+  }
+  
+  .form-submit-btn input[type="submit"] {
+    background-color:black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto; /* Add this line to center the button */
+  }
+  
+   
+  .form-submit-btn input[type="submit"]:hover {
+    background-color:grey;
+  }
+  

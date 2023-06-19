@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&display=swap');
+
+
+#homepage{
+    gap: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+#background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    filter: brightness(70%);
+}
+
+#navbar{
+    position: block;
+}
+
+#VehicleDetails{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inconsolata', monospace;
+}
+
+#VehicleDetails > div{
+    width: 40%;
+    font-size: 20px;
+}
+
+#VehicleDetails > #VehicleName > h1{
+    font-size: 40px;
+}
+
+#VehiclePic > a{
+    font-size: 50px;
+}
+
+#VehiclePic{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#VehiclePic > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+#VehicleName{
+    padding-left: 200px;
+    width: 50%;
+}

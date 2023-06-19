@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Space TD Website</title>
+		<link rel="stylesheet" href="./Assets/Styles/header.css" type="text/css" />
+		<link rel="stylesheet" href="./Assets/Styles/homepage.css" type="text/css" />
+		<link rel="stylesheet" href="./Assets/Styles/index.css" type="text/css" />
+		<link rel="stylesheet" href="./Assets/Styles/vehicles.css" type="text/css" />
+		<link rel="stylesheet" href="./Assets/Styles/program.css" type="text/css" />
+		<link rel="stylesheet" href="./Assets/Styles/register.css" type="text/css" />
+	</head>
+	<body>
+		<main id="homepage">
+			<img src="./Assets/Images/RegisterBackground.png" alt="home background" id="background" />
+			<nav id="navbar">
+				<img src="./Assets/Images/Logo White Revise.png" alt="SpaceTDLogo" id="navbar_logo" />
+				<ul>
+					<li><a href="./Index.html">Home</a></li>
+					<li><a href="OrionX.html">Vehicles</a></li>
+					<li><a href="./Register.html" class="active">Register</a></li>
+					<li><a href="./LunarProgram.html">Programs</a></li>
+					<li><a href="./Launches.html">Launches</a></li>
+				</ul>
+			</nav>
+			<div class="container">
+				<h1 class="form-title">Registration</h1>
+				<form onsubmit="return validateForm()">
+					<div class="row">
+						<div class="col">
+							<!-- First row of form elements -->
+							<div class="user-input-box">
+								<label for="fullName">Full Name</label>
+								<input type="text" id="fullName" name="fullName" placeholder="Enter Full Name" />
+							</div>
+							<div class="user-input-box">
+								<label for="username">Email</label>
+								<input type="text" id="Email" name="Email" placeholder="Enter Email" />
+							</div>
+							<div class="user-input-box">
+								<label for="phoneNumber">Phone Number</label>
+								<input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number" />
+							</div>
+							<div class="user-input-box">
+								<label for="Password">New Password</label>
+								<input
+									type="password"
+									id="userPassword"
+									name="userPassword"
+									placeholder="Enter New Password"
+								/>
+							</div>
+						</div>
+						<div class="col">
+							<!-- Second row of form elements -->
+							<div class="user-input-box">
+								<label for="birthDate">Date of Birth</label>
+								<input type="date" id="birthDate" name="birthDate" placeholder="Date of Birth" />
+							</div>
+							<div class="user-input-box">
+								<label for="Country">Country</label>
+								<input type="text" id="Country" name="Country" placeholder="Country" />
+							</div>
+							<div class="user-input-box">
+								<label for="gender">Gender</label>
+								<select id="gender" name="gender">
+									<option value="male">Male</option>
+									<option value="female">Female</option>
+								</select>
+							</div>
+							<div class="user-input-box">
+								<label for="confirmPassword">Confirm Password</label>
+								<input
+									type="password"
+									id="confirmPassword"
+									name="confirmPassword"
+									placeholder="Confirm Password"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="form-submit-btn">
+						<input type="submit" value="Registration" />
+					</div>
+				</form>
+			</div>
+		</main>
+    <script src="Validation.js"></script>
+	</body>
+</html>

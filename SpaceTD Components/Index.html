@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>SpaceTD</title>
+	<link rel="stylesheet" href="./Assets/Styles/header.css" type="text/css" />
+	<link rel="stylesheet" href="./Assets/Styles/homepage.css" type="text/css" />
+	<link rel="stylesheet" href="./Assets/Styles/index.css" type="text/css" />
+</head>
+<body>
+	<main id="homepage">
+		<video autoplay muted loop id="SpaceTDHomeVideo">
+			<source src="LaunchVideo.mp4" type="video/mp4">
+		</video>
+		<nav id="navbar">
+			<img src="./Assets/Images/Logo White Revise.png" alt="SpaceTDLogo" id="navbar_logo" />
+			<ul>
+				<li>
+					<a href="Index.html" class="active">Home</a>
+				</li>
+				<li><a href="./OrionX.html">Vehicles</a></li>
+				<li><a href="./Register.html">Register</a></li>
+				<li><a href="./LunarProgram.html">Programs</a></li>
+				<li><a href="./Launches.html">Launches</a></li>
+			</ul>
+		</nav>
+		<article id="main-content">
+			<h1>Envision a world that reveal the universe's secrets.</h1>
+			<h1>Make your space travel affordable, sustainable, and
+				a catalyst for Mars colonization.</h1>
+		</article>
+	</main>
+	<script>
+		// Pause the video when the page is unloaded
+		window.addEventListener('unload', function() {
+			var video = document.getElementById('SpaceTDHomeVideo');
+			video.pause();
+		});
+	</script>
+</body>
+</html>
